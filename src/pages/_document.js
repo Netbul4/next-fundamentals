@@ -3,6 +3,7 @@ import Comp from "@/components/Comp";
 import Props from "@/components/Props";
 import State from "@/components/State";
 import ConditionalRender from "@/components/ConditionalRender";
+import ElementsRender from "@/components/ElementsRender"; 
 
 export default function Document() {
   return (
@@ -21,6 +22,8 @@ export default function Document() {
         <State/>
         <hr></hr>
         <ConditionalRender/>
+        <hr></hr>
+        <ElementsRender/>
       </body>
     </Html>
   );
