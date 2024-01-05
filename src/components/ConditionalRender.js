@@ -17,12 +17,18 @@ function Logout(){
 }
 
 export default class ConditionalRender extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            session: false,
+        };
+    }
+
     render(){
         return(
             <div>
                 <h2>Conditional Render.</h2>
-                <Login/>
-                <Logout/>
+                {this.state.session ? <Logout/> : <Login/>} 
             </div>
         )
     }
