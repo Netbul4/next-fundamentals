@@ -4,6 +4,7 @@ import Props from "@/components/Props";
 import State from "@/components/State";
 import ConditionalRender from "@/components/ConditionalRender";
 import ElementsRender from "@/components/ElementsRender"; 
+import Events from "@/components/Events";
 
 export default function Document() {
   return (
@@ -24,6 +25,8 @@ export default function Document() {
         <ConditionalRender/>
         <hr></hr>
         <ElementsRender/>
+        <hr></hr>
+        <Events/>
       </body>
     </Html>
   );
