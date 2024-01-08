@@ -50,14 +50,14 @@ export class EventsES7 extends Component {
     this.setState({
       counter: this.state.counter + 1,
     });
-  }
+  };
 
   decrease = (e) => {
     console.log("decreasing value");
     this.setState({
       counter: this.state.counter - 1,
     });
-  }
+  };
 
   render() {
     return (
@@ -68,6 +68,34 @@ export class EventsES7 extends Component {
           <button onClick={this.decrease}>-</button>
         </nav>
         <h3>{this.state.counter}</h3>
+      </div>
+    );
+  }
+}
+
+function Button (props){
+  return <button onClick={props.myOnClick}>Component button.</button>
+}
+
+export class MoreEvents extends Component {
+  handleClick = (e, msg) => {
+    console.log(e);
+  };
+
+  render() {
+    return (
+      <div>
+        <h2>More about events.</h2>
+        <button
+          onClick={(e) =>
+            this.handleClick(e, "Sending a parameter trough event.")
+          }
+        >
+          Hello
+        </button>
+        <Button myOnClick={(e) =>
+            this.handleClick(e, "Sending a parameter trough event.")
+          }/>
       </div>
     );
   }
