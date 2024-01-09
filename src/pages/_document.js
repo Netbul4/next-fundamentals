@@ -5,6 +5,7 @@ import State from "@/components/State";
 import ConditionalRender from "@/components/ConditionalRender";
 import ElementsRender from "@/components/ElementsRender"; 
 import {EventsES6, EventsES7, MoreEvents} from "@/components/Events";
+import Parent from "@/components/ComponentComunication";
 
 export default function Document() {
   return (
@@ -31,6 +32,8 @@ export default function Document() {
         <EventsES7/>
         <hr></hr>
         <MoreEvents/>
+        <hr></hr>
+        <Parent/>
       </body>
     </Html>
   );
