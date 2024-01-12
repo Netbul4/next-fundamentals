@@ -2,6 +2,15 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Comp from "@/components/Comp";
+import Props from "@/components/Props";
+import State from "@/components/State";
+import ConditionalRender from "@/components/ConditionalRender";
+import ElementsRender from "@/components/ElementsRender"; 
+import {EventsES6, EventsES7, MoreEvents} from "@/components/Events";
+import Parent from "@/components/ComponentComunication";
+import LifeCycle from "@/components/ComponentLifecyle";
+import AjaxApis from "@/components/AjaxApis";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -107,6 +116,32 @@ export default function Home() {
               with&nbsp;Vercel.
             </p>
           </a>
+        </div>
+        <div>
+        <Comp msg="Hi, I am a Component!." />
+        <Props 
+        string="This is a string" 
+        number={20} 
+        boolean={true}
+        array={[1,2,3,4]} />
+        <hr></hr>
+        <State/>
+        <hr></hr>
+        <ConditionalRender/>
+        <hr></hr>
+        <ElementsRender/>
+        <hr></hr>
+        <EventsES6/>
+        <hr></hr>
+        <EventsES7/>
+        <hr></hr>
+        <MoreEvents/>
+        <hr></hr>
+        <Parent/>
+        <hr></hr>
+        <LifeCycle/>
+        <hr></hr>
+        <AjaxApis/>
         </div>
       </main>
     </>
