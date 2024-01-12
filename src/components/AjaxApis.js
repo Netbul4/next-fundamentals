@@ -15,13 +15,13 @@ export default class AjaxApis extends Component {
   };
 
   componentDidMount() {
-    let url = "https://pokeapi.com/api/v2/pokemon/";
+    let url = "https://pokeapi.co/api/v2/pokemon/";
 
     fetch(url)
       .then((res) => res.json())
       .then((json) => {
         console.log(json);
-        json.result.array.forEach((element) => {
+        json.results.forEach((el) => {
           fetch(el.url)
             .then((res) => res.json())
             .then((json) => {
@@ -32,6 +32,7 @@ export default class AjaxApis extends Component {
               };
 
               let pokemons = [...this.state.pokemons, pokemon];
+              this.setState({ pokemons });
             });
         });
       });

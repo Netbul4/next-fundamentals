@@ -33,7 +33,7 @@ export default class LifeCycle extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     console.log(2, "Component is Updating.");
-    consolge.log(prevProps);
+    console.log(prevProps);
     console.log(prevState);
   }
 
