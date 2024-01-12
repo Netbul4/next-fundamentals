@@ -6,6 +6,7 @@ import ConditionalRender from "@/components/ConditionalRender";
 import ElementsRender from "@/components/ElementsRender"; 
 import {EventsES6, EventsES7, MoreEvents} from "@/components/Events";
 import Parent from "@/components/ComponentComunication";
+import LifeCycle from "@/components/ComponentLifecyle";
 
 export default function Document() {
   return (
@@ -34,6 +35,8 @@ export default function Document() {
         <MoreEvents/>
         <hr></hr>
         <Parent/>
+        <hr></hr>
+        <LifeCycle/>
       </body>
     </Html>
   );
