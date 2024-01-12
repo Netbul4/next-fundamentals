@@ -7,6 +7,7 @@ import ElementsRender from "@/components/ElementsRender";
 import {EventsES6, EventsES7, MoreEvents} from "@/components/Events";
 import Parent from "@/components/ComponentComunication";
 import LifeCycle from "@/components/ComponentLifecyle";
+import AjaxApis from "@/components/AjaxApis";
 
 export default function Document() {
   return (
@@ -37,6 +38,8 @@ export default function Document() {
         <Parent/>
         <hr></hr>
         <LifeCycle/>
+        <hr></hr>
+        <AjaxApis/>
       </body>
     </Html>
   );
