@@ -12,6 +12,7 @@ import Parent from "@/components/ComponentComunication";
 import LifeCycle from "@/components/ComponentLifecyle";
 import AjaxApis from "@/components/AjaxApis";
 import HooksCounter from '@/components/HooksCounter';
+import ScrollHooks from '@/components/ScrollHooks';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -145,6 +146,8 @@ export default function Home() {
         <AjaxApis/>
         <hr></hr>
         <HooksCounter title="Followers"/>
+        <hr></hr>
+        <ScrollHooks/>
         </div>
       </main>
     </>
