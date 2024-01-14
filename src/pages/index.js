@@ -11,6 +11,7 @@ import {EventsES6, EventsES7, MoreEvents} from "@/components/Events";
 import Parent from "@/components/ComponentComunication";
 import LifeCycle from "@/components/ComponentLifecyle";
 import AjaxApis from "@/components/AjaxApis";
+import HooksCounter from '@/components/HooksCounter';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -142,6 +143,8 @@ export default function Home() {
         <LifeCycle/>
         <hr></hr>
         <AjaxApis/>
+        <hr></hr>
+        <HooksCounter title="Followers"/>
         </div>
       </main>
     </>
