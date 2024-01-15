@@ -13,6 +13,7 @@ import LifeCycle from "@/components/ComponentLifecyle";
 import AjaxApis from "@/components/AjaxApis";
 import HooksCounter from '@/components/HooksCounter';
 import ScrollHooks from '@/components/ScrollHooks';
+import HookClock from '@/components/HookClock';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -125,7 +126,7 @@ export default function Home() {
         string="This is a string" 
         number={20} 
         boolean={true}
-        array={[1,2,3,4]} />
+        array={[1,2,3,4]}/>
         <hr></hr>
         <State/>
         <hr></hr>
@@ -148,6 +149,8 @@ export default function Home() {
         <HooksCounter title="Followers"/>
         <hr></hr>
         <ScrollHooks/>
+        <hr></hr>
+        <HookClock/>
         </div>
       </main>
     </>
