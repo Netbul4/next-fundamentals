@@ -15,6 +15,7 @@ import HooksCounter from '@/components/HooksCounter';
 import ScrollHooks from '@/components/ScrollHooks';
 import HookClock from '@/components/HookClock';
 import AjaxHooks from '@/components/AjaxHooks';
+import CustomHooks from '@/components/CustomHooks';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -154,6 +155,8 @@ export default function Home() {
         <HookClock/>
         <hr></hr>
         <AjaxHooks/>
+        <hr></hr>
+        <CustomHooks/>
         </div>
       </main>
     </>
