@@ -17,6 +17,7 @@ import HookClock from '@/components/HookClock';
 import AjaxHooks from '@/components/AjaxHooks';
 import CustomHooks from '@/components/CustomHooks';
 import References from '@/components/References';
+import Forms from '@/components/Forms';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -161,6 +162,8 @@ export default function Home() {
         <hr></hr>
         <References/>
         </div>
+        <hr></hr>
+        <Forms/>
       </main>
     </>
   )
