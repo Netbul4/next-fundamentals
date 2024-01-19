@@ -1,4 +1,5 @@
 import React from "react";
+import moduleStyles from "../styles/Styles.module.css";
 
 export default function Styles() {
   let myStyle = {
@@ -23,6 +24,10 @@ export default function Styles() {
       <h3 className="bg-react">Adding normalize.</h3>
       <br />
       <code>@import-normalize;</code>
+      <br />
+      <h3 className={moduleStyles.error}>Style with modules</h3>
+      <h3 className={moduleStyles.success}>Style with modules</h3>
+      <h3 className="bg-sass">Style with SASS</h3>
     </section>
   );
 }
