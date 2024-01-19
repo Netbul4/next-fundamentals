@@ -18,6 +18,7 @@ import AjaxHooks from '@/components/AjaxHooks';
 import CustomHooks from '@/components/CustomHooks';
 import References from '@/components/References';
 import Forms from '@/components/Forms';
+import Styles from '@/components/Styles';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -164,6 +165,8 @@ export default function Home() {
         </div>
         <hr></hr>
         <Forms/>
+        <hr></hr>
+        <Styles/>
       </main>
     </>
   )
