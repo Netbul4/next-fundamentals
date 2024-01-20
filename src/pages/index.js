@@ -19,6 +19,7 @@ import CustomHooks from '@/components/CustomHooks';
 import References from '@/components/References';
 import Forms from '@/components/Forms';
 import Styles from '@/components/Styles';
+import StyledComponents from '@/components/StyledComponents';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -167,6 +168,8 @@ export default function Home() {
         <Forms/>
         <hr></hr>
         <Styles/>
+        <br></br>
+        <StyledComponents/>
       </main>
     </>
   )
